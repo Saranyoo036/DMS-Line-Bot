@@ -1,5 +1,5 @@
 <?php
- 
+ $testt=$_GET["Hello"]
 $strAccessToken = "vP6AKZ8YU/hpx5aev1ZbonArtyg6FiMBkfiSs1C4wTSaH2sHanWyoM46Nmyrqn3US0ggfmaGetScRVg0vsLq7OjvXTQl+GwrGJuoliAaCtKGoukAaWmQR+EyjSVo6NJheAQrsQ9QtjoBZCbzObDGPQdB04t89/1O/w1cDnyilFU=";
  
 $strUrl = "https://api.line.me/v2/bot/message/push";
@@ -24,5 +24,5 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 $result = curl_exec($ch);
 curl_close ($ch);
- 
+echo $testt;
 ?>
