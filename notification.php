@@ -11,7 +11,7 @@ $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
 $arrPostData = array();
 $arrPostData['to'] = "U15c9dca3b2a9c602e02889a98c928128";
 $arrPostData['messages'][0]['type'] = "text";
-$arrPostData['messages'][0]['text'] = ".$_GET["massage"].";
+$arrPostData['messages'][0]['text'] = "ผู้ป่วย 002 ระดับน้ำตาล 200 เวลา 20.00 วันที่ 2/4/2017";
  
  
 $ch = curl_init();
