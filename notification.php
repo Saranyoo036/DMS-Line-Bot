@@ -1,6 +1,6 @@
 
 <?php
- echo "hello world";
+ echo $_GET["hello"];
 $strAccessToken = "vP6AKZ8YU/hpx5aev1ZbonArtyg6FiMBkfiSs1C4wTSaH2sHanWyoM46Nmyrqn3US0ggfmaGetScRVg0vsLq7OjvXTQl+GwrGJuoliAaCtKGoukAaWmQR+EyjSVo6NJheAQrsQ9QtjoBZCbzObDGPQdB04t89/1O/w1cDnyilFU=";
  
 $strUrl = "https://api.line.me/v2/bot/message/push";
