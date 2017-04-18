@@ -1,6 +1,6 @@
 
 <?php
- echo $_GET["hello"];
+ $ID=$_GET["hello"];
 $strAccessToken = "vP6AKZ8YU/hpx5aev1ZbonArtyg6FiMBkfiSs1C4wTSaH2sHanWyoM46Nmyrqn3US0ggfmaGetScRVg0vsLq7OjvXTQl+GwrGJuoliAaCtKGoukAaWmQR+EyjSVo6NJheAQrsQ9QtjoBZCbzObDGPQdB04t89/1O/w1cDnyilFU=";
  
 $strUrl = "https://api.line.me/v2/bot/message/push";
@@ -12,7 +12,7 @@ $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
 $arrPostData = array();
 $arrPostData['to'] = "U15c9dca3b2a9c602e02889a98c928128";
 $arrPostData['messages'][0]['type'] = "text";
-$arrPostData['messages'][0]['text'] = "patient ID : ? Name : ? Level : ? BloodSugar: ? Time : ? Date : ? ";
+$arrPostData['messages'][0]['text'] = "patient ID : ".$ID." Name : ? Level : ? BloodSugar: ? Time : ? Date : ? ";
  
  
 $ch = curl_init();
