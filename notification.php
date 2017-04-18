@@ -12,7 +12,7 @@ $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
 $arrPostData = array();
 $arrPostData['to'] = "U15c9dca3b2a9c602e02889a98c928128";
 $arrPostData['messages'][0]['type'] = "text";
-$arrPostData['messages'][0]['text'] = "Hello world";
+$arrPostData['messages'][0]['text'] = "patient ID : ? Name : ? Level : ? BloodSugar: ? Time : ? Date : ? ";
  
  
 $ch = curl_init();
