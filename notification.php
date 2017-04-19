@@ -29,7 +29,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($arrPostData));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 $result = curl_exec($ch);
-echo json_encode($result);
+echo json_encode($arrPostData);
 curl_close ($ch);
  
 ?>
