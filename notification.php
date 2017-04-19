@@ -1,6 +1,6 @@
 
 <?php
-$use=$_GET["use"];
+//$use=$_GET["use"];
  $ID=$_GET["ID"];
  $name=$_GET["name"];
  $level = $_GET["level"];
@@ -15,7 +15,7 @@ $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
 $arrPostData = array();
-$arrPostData['to'] = ".$use.";
+$arrPostData['to'] = "Uef6239f702a426f5878b369a7555a8c0";
 $arrPostData['messages'][0]['type'] = "text";
 $arrPostData['messages'][0]['text'] = "patient ID : ".$ID." Name : ".$name."     Level : ".$level." BloodSugar: ".$BS." Time : ".date("H:i:s")." Date : ".date("Y-m-d")." ";
  
