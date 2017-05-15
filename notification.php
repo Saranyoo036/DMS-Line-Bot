@@ -15,7 +15,7 @@ $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
 $arrPostData = array();
-$arrPostData['to'] = "U15c9dca3b2a9c602e02889a98c928128";
+$arrPostData['to'] = $use;
 $arrPostData['messages'][0]['type'] = "text";
 $arrPostData['messages'][0]['text'] = "patient ID : ".$ID." Name : ".$name."  BloodSugar: ".$BS." Time : ".date("H:i:s")." Date : ".date("Y-m-d")." ";
  
